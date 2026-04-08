@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+@font-face {
+  font-family: "Uncial Antiqua";
+  src: url("/UncialAntiqua-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.topo, .topo h1, .topo h2, .topo span {
+  font-family: "Uncial Antiqua", serif !important;
+  background-color: #311e0b !important;
+  color: #fff !important;
+  text-align: center !important;
+  font-size: 3.5rem !important;
+  padding: 30px 10px !important;
+  margin: 0 !important;
+  display: block !important;
+}
+
+.slideshow{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slideshow img{
+  width: 90%;
+  height: 90%;
+  border-radius: 8px;;
+  object-fit: cover;
+  object-position: center;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+}
+
+body, .App, .slideshow, .container {
+  background-color: #c29c70 !important; 
+  padding: 0;
+}
+
+.cartoes-container {
+  display: flex !important;
+  flex-direction: row !important; 
+  flex-wrap: wrap !important;  
+  justify-content: center !important;
+  align-items: flex-start !important;
+  
+  padding: 60px 40px !important; 
+  gap: 30px !important; 
+  
+  width: 100% !important;
+  overflow-x: visible !important; 
+  box-sizing: border-box !important;
+}
+
+.cartao {
+  display: flex !important; 
+  flex-direction: column !important;
+  flex: 0 0 320px !important; 
+  justify-content: space-between;
+  width: 320px !important;
+  height: 450px !important;
+  background-color: #fff !important;
+  border-radius: 15px !important;
+  padding: 20px !important;
+  
+  margin: 10px !important; 
+  
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  cursor: pointer !important;
+  border: 1px solid #eee !important;
+  text-align: center !important;
+  vertical-align: top !important;
+}
+
+.cartao:hover {
+  transform: translateY(-12px) !important;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important;
+}
+
+.cartao img {
+  width: 100% !important;
+  height: 300px !important;
+  object-fit: cover !important;
+  border-radius: 10px !important;
+}
+
+.cartao h3 {
+  font-family: sans-serif !important;
+  font-size: 1.15rem !important;
+  color: #333 !important;
+  margin: 15px 0 0 0 !important; 
+  white-space: normal !important; 
+  line-height: 1.2 !important;
+}
+
+.cartao p {
+  margin-top: 10px;
+  font-family: sans-serif !important;
+  color: rgb(100, 103, 112);
+}
+
+.cartao button{
+  margin-top: 8px;
+  background-color: #472f18; 
+  color: #fff;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.cartao:hover button {
+  background-color: #8b4a25;
+  transform: translateY(-5px) !important; 
+  transition: transform 0.3s ease !important;
+}
+
+.filtros-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 15px;
+  padding: 30px 10px;
+}
+
+.filtros-container button {
+  background-color: #472f18; 
+  color: #fff;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: 10%;
+  height: 15%;
+}
+
+.filtros-container button:hover {
+  background-color: #8b4a25; 
+  transform: scale(1.05);
+}
+
+.filtros-container button.active {
+  background-color: #9e6f48;
+  border-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
